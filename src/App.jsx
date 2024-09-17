@@ -1,9 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div className='text-green-500'>Tailwind</div>
+    <div className='mx-4 sm:mx-[10%]'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </div>
   )
 }
 
